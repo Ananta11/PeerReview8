@@ -10,5 +10,5 @@ After filling the form and hitting *Add Person* button we add an *NSManagedObjec
 And at the bottom there is a *Clear All* button which clears the Persistent Storage Data.
 
 ---
-![PeerReview8](https://github.com/Ananta11/PeerReview8/raw/master/Common/Screenshot.png)
+![PeerReview8](https://github.com/Ananta11/PeerReview8/raw/master/Common/ScreenShot.png)
 ---

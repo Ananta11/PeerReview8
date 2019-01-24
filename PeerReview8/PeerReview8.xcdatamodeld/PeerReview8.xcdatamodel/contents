@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Person" representedClassName="PersonMO" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="professorPerson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professor" inverseName="person" inverseEntity="Professor" syncable="YES"/>
+        <relationship name="studentPerson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="person" inverseEntity="Student" syncable="YES"/>
+    </entity>
+    <entity name="Professor" representedClassName="ProfessorMO" parentEntity="Person" syncable="YES">
+        <attribute name="researches" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="person" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="professorPerson" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Student" representedClassName="StudentMO" parentEntity="Person" syncable="YES">
+        <attribute name="grades" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="person" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="studentPerson" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Student" positionX="115" positionY="621" width="128" height="88"/>
+        <element name="Professor" positionX="115" positionY="162" width="128" height="88"/>
+        <element name="Person" positionX="-288" positionY="372" width="128" height="103"/>
+    </elements>
 </model>

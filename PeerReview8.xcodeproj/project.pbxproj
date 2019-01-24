@@ -16,6 +16,12 @@
 		8C1B6B0F1EFAAB2A0031F57B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1B6B0D1EFAAB2A0031F57B /* LaunchScreen.storyboard */; };
 		8C1B6B1A1EFAAB2A0031F57B /* PeerReview8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B6B191EFAAB2A0031F57B /* PeerReview8Tests.m */; };
 		8C1B6B251EFAAB2A0031F57B /* PeerReview8UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B6B241EFAAB2A0031F57B /* PeerReview8UITests.m */; };
+		8C1B6B501EFAAE680031F57B /* PersonMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B6B451EFAAE680031F57B /* PersonMO+CoreDataClass.m */; };
+		8C1B6B511EFAAE680031F57B /* PersonMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B6B471EFAAE680031F57B /* PersonMO+CoreDataProperties.m */; };
+		8C1B6B521EFAAE680031F57B /* ProfessorMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B6B491EFAAE680031F57B /* ProfessorMO+CoreDataClass.m */; };
+		8C1B6B531EFAAE680031F57B /* ProfessorMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B6B4B1EFAAE680031F57B /* ProfessorMO+CoreDataProperties.m */; };
+		8C1B6B541EFAAE680031F57B /* StudentMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B6B4D1EFAAE680031F57B /* StudentMO+CoreDataClass.m */; };
+		8C1B6B551EFAAE680031F57B /* StudentMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B6B4F1EFAAE680031F57B /* StudentMO+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,18 @@
 		8C1B6B201EFAAB2A0031F57B /* PeerReview8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeerReview8UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1B6B241EFAAB2A0031F57B /* PeerReview8UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerReview8UITests.m; sourceTree = "<group>"; };
 		8C1B6B261EFAAB2A0031F57B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C1B6B441EFAAE680031F57B /* PersonMO+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PersonMO+CoreDataClass.h"; sourceTree = "<group>"; };
+		8C1B6B451EFAAE680031F57B /* PersonMO+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PersonMO+CoreDataClass.m"; sourceTree = "<group>"; };
+		8C1B6B461EFAAE680031F57B /* PersonMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PersonMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8C1B6B471EFAAE680031F57B /* PersonMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PersonMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8C1B6B481EFAAE680031F57B /* ProfessorMO+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProfessorMO+CoreDataClass.h"; sourceTree = "<group>"; };
+		8C1B6B491EFAAE680031F57B /* ProfessorMO+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProfessorMO+CoreDataClass.m"; sourceTree = "<group>"; };
+		8C1B6B4A1EFAAE680031F57B /* ProfessorMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProfessorMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8C1B6B4B1EFAAE680031F57B /* ProfessorMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProfessorMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8C1B6B4C1EFAAE680031F57B /* StudentMO+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StudentMO+CoreDataClass.h"; sourceTree = "<group>"; };
+		8C1B6B4D1EFAAE680031F57B /* StudentMO+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StudentMO+CoreDataClass.m"; sourceTree = "<group>"; };
+		8C1B6B4E1EFAAE680031F57B /* StudentMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StudentMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8C1B6B4F1EFAAE680031F57B /* StudentMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StudentMO+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,18 @@
 		8C1B6AF01EFAAB2A0031F57B = {
 			isa = PBXGroup;
 			children = (
+				8C1B6B441EFAAE680031F57B /* PersonMO+CoreDataClass.h */,
+				8C1B6B451EFAAE680031F57B /* PersonMO+CoreDataClass.m */,
+				8C1B6B461EFAAE680031F57B /* PersonMO+CoreDataProperties.h */,
+				8C1B6B471EFAAE680031F57B /* PersonMO+CoreDataProperties.m */,
+				8C1B6B481EFAAE680031F57B /* ProfessorMO+CoreDataClass.h */,
+				8C1B6B491EFAAE680031F57B /* ProfessorMO+CoreDataClass.m */,
+				8C1B6B4A1EFAAE680031F57B /* ProfessorMO+CoreDataProperties.h */,
+				8C1B6B4B1EFAAE680031F57B /* ProfessorMO+CoreDataProperties.m */,
+				8C1B6B4C1EFAAE680031F57B /* StudentMO+CoreDataClass.h */,
+				8C1B6B4D1EFAAE680031F57B /* StudentMO+CoreDataClass.m */,
+				8C1B6B4E1EFAAE680031F57B /* StudentMO+CoreDataProperties.h */,
+				8C1B6B4F1EFAAE680031F57B /* StudentMO+CoreDataProperties.m */,
 				8C1B6AFB1EFAAB2A0031F57B /* PeerReview8 */,
 				8C1B6B181EFAAB2A0031F57B /* PeerReview8Tests */,
 				8C1B6B231EFAAB2A0031F57B /* PeerReview8UITests */,
@@ -279,10 +309,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1B6B511EFAAE680031F57B /* PersonMO+CoreDataProperties.m in Sources */,
 				8C1B6B041EFAAB2A0031F57B /* ViewController.m in Sources */,
+				8C1B6B531EFAAE680031F57B /* ProfessorMO+CoreDataProperties.m in Sources */,
+				8C1B6B551EFAAE680031F57B /* StudentMO+CoreDataProperties.m in Sources */,
 				8C1B6B011EFAAB2A0031F57B /* AppDelegate.m in Sources */,
 				8C1B6B0A1EFAAB2A0031F57B /* PeerReview8.xcdatamodeld in Sources */,
+				8C1B6B501EFAAE680031F57B /* PersonMO+CoreDataClass.m in Sources */,
 				8C1B6AFE1EFAAB2A0031F57B /* main.m in Sources */,
+				8C1B6B521EFAAE680031F57B /* ProfessorMO+CoreDataClass.m in Sources */,
+				8C1B6B541EFAAE680031F57B /* StudentMO+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

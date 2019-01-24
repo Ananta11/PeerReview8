@@ -16,10 +16,30 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self persistentContainer];
+    NSManagedObjectContext *moc = self.persistentContainer.viewContext;
+    [self persistentStoreCoordinator];
+    [self managedObjectModel];
+    
+    NSAssert(moc != nil, @"Cannot init managed object model");
     return YES;
 }
 
+#pragma mark - My core data access code
+
+-(StudentMO *) createStudent
+{
+    NSManagedObjectContext *moc = self.persistentContainer.viewContext;
+    StudentMO *student = [NSEntityDescription insertNewObjectForEntityForName:@"Student" inManagedObjectContext:moc];
+    return student;
+}
+
+-(ProfessorMO *) createProfessor
+{
+    NSManagedObjectContext *moc = self.persistentContainer.viewContext;
+    ProfessorMO *professor = [NSEntityDescription insertNewObjectForEntityForName:@"Professor" inManagedObjectContext:moc];
+    return professor;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
